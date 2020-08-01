@@ -681,7 +681,7 @@ async def whois_error(ctx, error):
 
 
 
-bot.run("NzI0NTMxMDQ1NDk1NDcyMTY4.XvBinQ.WJA4dlQsnw_Z4gCgfSYu0LmmBZA")
+bot.run("TOKEN")
 
 
    # guild = discord.utils.get(bot.guilds, name=f'{guild.name}')
