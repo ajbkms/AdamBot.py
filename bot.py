@@ -1,4 +1,3 @@
-# Standard libraries
 import os
 import logging
 import time
@@ -7,7 +6,6 @@ import random
 import platform
 from discord.ext import tasks
 
-# Third party libraries
 import discord
 import datetime
 from pathlib import Path
@@ -19,38 +17,6 @@ bot = commands.Bot(command_prefix = "~")
 bot.remove_command('help')
 
 IGNORE_EXCEPTIONS = (CommandNotFound, BadArgument)
-
-filtered_words = ["Nigger", 
-                "nigger",
-                "nigg3r",
-                "nIgger",
-                "niGger",
-                "NIGGER",
-                "cunt",
-                "CUNT",
-                "CuNt",
-                "NiGgEr",
-                "Kill YourSelf",
-                "kill your self",
-                "KYS",
-                "Kys",
-                "kys",
-                "Kill Your Self",
-                "KILL YOURSELF",
-                "KILL YOUR SELF",
-                "kill your s3lf",
-                "i hope your mother dies",
-                "i hope your father dies",
-                "i hope you killyourself",
-                "hang yourself",
-                "Hang yourself",
-                "Hang Yourself",
-                "Hang Your Self",
-                "HaNg YoUrSeLf",
-                "jsbjsbfiusgfduisgfbdsudsi cfsufvi ds",
-                "Cunt",
-                "Cunt",
-                "Cunt",]
 
 @tasks.loop(seconds=172800)
 async def online():
